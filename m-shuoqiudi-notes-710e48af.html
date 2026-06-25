@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>说球帝 – 赛事数据与球迷社区</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.75;
+            padding: 2rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 680px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* 留白与呼吸感 */
+        .hero {
+            margin-top: 3.5rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            color: #0f172a;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #64748b;
+            margin-top: 0.5rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 2.5rem 0;
+            width: 100%;
+        }
+
+        .intro-text {
+            font-size: 1.05rem;
+            color: #1e293b;
+            margin-bottom: 2rem;
+        }
+
+        .intro-text p {
+            margin-bottom: 1.25rem;
+        }
+
+        .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 特点卡片 */
+        .feature-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin: 2.2rem 0 2.8rem 0;
+        }
+
+        .feature-item {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.2rem 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+            border: 1px solid #edf2f7;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .feature-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        }
+
+        .feature-item span {
+            display: block;
+            font-weight: 530;
+            font-size: 1rem;
+            color: #0f172a;
+            margin-bottom: 0.2rem;
+        }
+
+        .feature-item .desc {
+            font-size: 0.95rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        /* 温和结尾 */
+        .closing-note {
+            margin: 3rem 0 2rem 0;
+            padding: 1.5rem 0 0.2rem 0;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.98rem;
+            color: #475569;
+        }
+
+        .closing-note a {
+            color: #1e293b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #cbd5e1;
+            font-weight: 500;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        .closing-note a:hover {
+            text-decoration-color: #475569;
+        }
+
+        .footnote {
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+
+            .hero .sub {
+                font-size: 1rem;
+            }
+
+            .feature-item {
+                padding: 1rem 1.2rem;
+            }
+        }
+
+        /* 保持窄正文宽度内对齐 */
+        .inline-link {
+            color: #1e293b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #cbd5e1;
+            font-weight: 500;
+            transition: text-decoration-color 0.2s ease;
+        }
+
+        .inline-link:hover {
+            text-decoration-color: #475569;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero 开场短句 -->
+    <div class="hero">
+        <h1>说球帝</h1>
+        <div class="sub">数据与观点 · 从一次浏览开始</div>
+    </div>
+
+    <!-- 承接段落：从用户意图切入 -->
+    <div class="intro-text">
+        <p>
+            想快速知道一支球队近期的状态，或者临场阵容有什么变化？当屏幕上同时铺开好几场直播时，一个干净、直接的信息源会省去很多整理的时间。
+        </p>
+        <p>
+            在手机端上打开<a href="https://m-shuoqiudi.com" class="inline-link">说球帝</a>，首先感受到的是紧凑的赛程列表——没有夸张的弹窗，也没有冗余的广告墙。页面把赛果、数据走向和社区讨论放在了一起，你可以根据当天关注的重点，在比分与观点之间自然切换。
+        </p>
+    </div>
+
+    <!-- 特点列表：简洁、克制 -->
+    <div class="feature-grid">
+        <div class="feature-item">
+            <span>赛程与实时比分</span>
+            <div class="desc">覆盖主流联赛及杯赛，比分更新节奏跟场上时间基本同步，关键事件（进球、红牌、点球）用短语标注，一目了然。</div>
+        </div>
+        <div class="feature-item">
+            <span>赛后数据卡片</span>
+            <div class="desc">控球率、射门、角球等核心统计以卡片形式呈现，方便对比双方表现，适合赛后再翻看复盘。</div>
+        </div>
+        <div class="feature-item">
+            <span>社区讨论流</span>
+            <div class="desc">每场比赛下方汇聚了用户短评，氛围偏向理性交流，偶尔能看到对战术或裁判判罚的有趣讨论。</div>
+        </div>
+    </div>
+
+    <!-- 温和结尾 + 自然嵌入链接 -->
+    <div class="closing-note">
+        <p>
+            如果你是那种比赛前想先看看首发名单、赛后想快速翻翻数据的人，<a href="https://m-shuoqiudi.com">说球帝</a>可能恰好契合你的习惯。没有复杂的会员墙，也不用下载额外应用，打开浏览器就能直接使用。
+        </p>
+        <p class="footnote">
+            页面仅做介绍，实际体验请以手机端上打开的版本为准。
+        </p>
+    </div>
+</div>
+</body>
+</html>
